@@ -2,6 +2,7 @@
     <div>
         
         <layout-barra></layout-barra>
+        
        
     <div class="fondo-2">
 
@@ -29,10 +30,11 @@ import LayoutBarra from '@/components/LayoutBarra.vue'
 import CalendarioList from '@/components/CalendarioList.vue'
 
 
+
 export default {
     name: 'Layout',
     components: {
-        TodoList, LayoutBarra, CalendarioList,
+        TodoList, LayoutBarra, CalendarioList
     }
 
     

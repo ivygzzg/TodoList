@@ -8,6 +8,8 @@
 
                     <form class="form">
 
+                        <div class="center">
+
                         <div class="input-group">
                             
                             <input class="input" placeholder="Nombre" type="name">
@@ -29,6 +31,8 @@
                          <div class="input-group">
                             
                             <input class="input" placeholder="Confirmar Contraseña" type="Password">
+
+                        </div>
 
                         </div>
 
@@ -135,8 +139,15 @@ export default {
         align-items: center;
         width: 100%;
         flex-direction: column;
+        text-align: center;
 
   }
+  
+  /* .form{
+      background-color: blue;
+      display: flex;
+      margin-left: 500px;
+  } */
 
   .text{
       font-size: 4rem;
@@ -151,6 +162,7 @@ export default {
       font-size: 14px;
       width: 300px;
     margin-bottom: 30px;
+    text-align: center;
       
   }
 

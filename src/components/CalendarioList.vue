@@ -4,7 +4,7 @@
             <b-switch v-model="bars">Bars</b-switch>
         </b-field> -->
         
-        <b-datepicker 
+        <b-datepicker  class="calendar"
             inline
             v-model="date" 
             :events="events"
@@ -73,3 +73,11 @@
         }
     }
 </script>
+
+<style>
+
+.calendar {
+    width: 300px;
+}
+
+</style>

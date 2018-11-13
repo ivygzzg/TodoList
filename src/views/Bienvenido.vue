@@ -1,27 +1,35 @@
 <template>
 
-<div>
+<div class="bienvenido-container">
 
     <div class="bienvenido">
     <h1 class="texto" >
-        Hola Ivonne!
+        !Hola!
     </h1>
-    <p class="texto-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.  <br>
-     Inventore autem laborum aliquid nam laudantium ratione modi, voluptatibus <br>
+    <p class="texto-1">Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. 
+     Inventore  <br> autem laborum aliquid nam  laudantium <br> ratione modi, voluptatibus 
       excepturi veniam officia.</p>
 
       <div class="main-button">
                 <button class="button" @click.prevent="submit()">Empieza Hoy</button>
       </div>
 
+        <div>
       <p class="aprende">Aprende más</p>
       </div>
+      </div>
 
-       <el-carousel :interval="5000" arrow="always">
+      <div class="info3">
+          
+          <img  class="imagen3" :src="info3" id="info3" alt="info3">
+      </div>
+
+       <!-- <el-carousel :interval="5000" arrow="always">
     <el-carousel-item v-for="item in 4" :key="item">
+        <img src="info3" alt="info3" class="info3">
       <h3>{{ item }}</h3>
     </el-carousel-item>
-  </el-carousel>
+  </el-carousel> -->
 
 
             
@@ -59,7 +67,7 @@ export default {
 
   *{
     margin: 0%;
-    padding: 0%;
+    padding: 50%;
     box-sizing: 0%;
 
 
@@ -70,18 +78,24 @@ export default {
 .bienvenido {
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-direction: column;
-    text-align: center;
     height: 100vh;
+    margin-left: 150px;
+}
+
+.bienvenido-container{
+    display: flex;
+    align-content: space-around;
+
 }
 
 .button {
 
         color: white;
         background-color: rgb(232, 45, 100);
-        font-family: 'value';
+        font-family: 'montserrat-light';
         border-radius: 5px;
         border: solid rgb(232, 45, 100);
         padding: 5px 100px;
@@ -91,17 +105,23 @@ export default {
         }
 
 .texto{
-    font-family: value;
+    font-family: montserrat-light;
     font-size: 7em;
     color: blue;
     margin-top: 50px;
 }
 
+.imagen3{
+    height: 500px;
+    margin-top: 75px;
+}
+
 
 .texto-1{
+    text-align: left;
     color: grey;
     margin-top: 40px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: montserrat-light;
 }
 

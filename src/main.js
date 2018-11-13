@@ -11,13 +11,10 @@ import vue from 'vue'
 import Vuetify from 'vuetify'
 // index.js or main.js
 import 'vuetify/dist/vuetify.min.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
-import vueg from 'vueg'
-import 'vueg/css/transition-min.css'
-Vue.use(vueg, router)
-
- 
 Vue.use(Vuetify)
 Vue.use(Buefy)
 Vue.use(BootstrapVue);

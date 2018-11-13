@@ -7,6 +7,7 @@
 
         <div class="container-main">
 
+            
 
             <div class="text">
                 <h1 class="text-style">Lorem ipsum dolor sit amet <br> consectetur adipiscing </h1>
@@ -43,32 +44,44 @@
     <section class="container">
 
         <div class="organiza-cantainer">
-            
-        <div class="imagen-container">
-                <h2>Lorem ipsum dolor.</h2>
-                <p class="text-organiza">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="imagen-container">
+                <h2 class="lorem1">Lorem Ipsum Dolor</h2>
+                <p class="text-organiza">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit fdksfj <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus </p>
             </div>
         </div>
 
         <div class="organiza-1">
-            <img :src="indo2" id="indo2" alt="grafico">
-            <div class="imagen-container">
-                <h2>Lorem ipsum dolor.</h2>
-                <p class="text-organiza-1">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            
+            <div class="imagen-container-1">
+                <h2 class="lorem2">Lorem ipsum dolor.</h2>
+                <p class="text-organiza-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit fdksfj <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus</p>
             </div>
         </div>
 
         <div class="organiza-2">
-            <img :src="info3" id="info3" alt="grafico">
+            
             <div class="imagen-container-2">
-                <h2>Lorem ipsum dolor.</h2>
-                <p class="text-organiza-2">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+                <h2 class="lorem3">Lorem ipsum dolor.</h2>
+                <p class="text-organiza-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit fdksfj <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus</p>
             </div>
         </div>
 
-        
+      
+
     </section>
 
+      <div class="todolist5">
+          <img :src="arrow05" id="arrow05" alt="simbolo">
+      </div>
+
+    
+    
 
     <ivonne-footer></ivonne-footer>
 
@@ -84,6 +97,7 @@
 import fondo from "@/assets/fondo.png"
 import navbar from "@/components/NavBar.vue"
 import flecha from "@/assets/flecha.png"
+import arrow05 from "@/assets/arrow05.png"
 // import indo2 from "@/assets/indo2.png"
 // import info3 from "@/assets/info3.png"
 import footer from "@/components/Footer.vue"
@@ -97,7 +111,7 @@ export default {
         // }
 
         return {
-            flecha,
+            flecha, arrow05
         }
 
     },
@@ -183,6 +197,7 @@ export default {
     line-height: 1em;
     letter-spacing: 0.02em;
     z-index: 1;
+    transition: 0.5s;
 }
 
 .text-1{
@@ -190,11 +205,13 @@ export default {
     justify-content: center;
     color: white;
     padding-top: 7px;
+    
 
 
 
 
 }
+
 
 .style-p{
 
@@ -245,28 +262,28 @@ export default {
 
 
 
-.container{
-    height: 1200px;
-    padding-top: 120px;
-    position: relative;
+
+
+.imagen-container{
+    text-align: right;
+    margin-left: 450px;
+    
 }
 
+
  .organiza-cantainer{
-     display: flex;
-    background: white;
+    display: flex;
     align-items: center;
+    background: white;
     box-shadow: 10px 10px 80px  rgb(15, 45, 100);
     border-radius: 5px;
     margin-bottom: 100px;
     height: 300px;
-    padding: 0%;
-    
-
 
 
     background-image: url("../assets/info1.png");
     background-repeat: no-repeat;
-    background-position: 0%;
+    background-position: -5.5%;
     background-size: auto;
     
     
@@ -275,26 +292,28 @@ export default {
 }
 
 
-.imagen-container{
 
-   padding-left: 400px;
-   text-align: right;
-}
 
-h2{
-    font-size: 2em;
+ h2{
+    
     font-family: value;
     color: blue;
     
-}
+} 
 
-.text-organiza{
-    font-size: 1.05em;
+.lorem1{
+    font-size: 3em;
+    line-height: 1.5em;
+} 
+
+ .text-organiza{
+    font-size: 1.1em;
     font-family: montserrat-light;
+    line-height: 2em;
     
 
     
-}
+} 
    
 .main-flecha{
     display: flex;
@@ -310,14 +329,19 @@ h2{
 /*segunda imagen*/
 
  .organiza-1{
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
+   
+   
+   
     background: white;
     box-shadow: 10px 10px 80px;
     border-radius: 5px;
     margin-bottom: 100px;
-    height: 230px;
+    height: 300px;
+
+    background-image: url("../assets/indo2.png");
+    background-repeat: no-repeat;
+    background-position: 105%;
+    background-size: auto;
     
 }
 
@@ -327,33 +351,51 @@ h2{
     margin-bottom: -17px;
 }
 
-.imagen-container{
-  margin-left: 50px;
-}
 
-h2{
-    font-size: 2em;
-    font-family: value;
+
+
     
-}
+
+
+ .lorem2{
+    font-size: 3em;
+    line-height: 1.5em;
+} 
 
 .text-organiza-1{
-    font-size: 1.05em;
+     font-size: 1.1em;
     font-family: montserrat-light;
+    line-height: 2em;
     
    
    
 }
 
+.imagen-container-1{
+    padding: 70px;
+    text-align: left;
+}
+
+
+.imagen-container-2{    
+    padding: 70px;
+    text-align: right;
+    margin-left: 450px;
+}
 
  .organiza-2{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     background: white;
     box-shadow: 10px 10px 80px;
     border-radius: 5px;
-    margin-bottom: 100px;
-    height: 230px;
+    margin-bottom: 0px;
+    height: 300px;
+
+     background-image: url("../assets/info3.png");
+    background-repeat: no-repeat;
+    background-position: -5.5%;
+    background-size: auto;
     
     
 
@@ -361,7 +403,7 @@ h2{
 
 .imagen-container-2{
     margin-left: 50px;
-}
+} 
 
 
 #no-2{
@@ -371,19 +413,20 @@ h2{
 
 }
 
-h2{
+ h2{
     font-size: 2em;
     font-family: value;
     
 }
 
 .text-organiza-2{
-    font-size: 1.05em;
+    font-size: 1.1em;
     font-family: montserrat-light;
+    line-height: 2em;
     
    
    
-}
+} */
 
 
 .button-footer{
@@ -398,5 +441,30 @@ h2{
    box-shadow: 4px 5px 20px rgb(16, 64, 151);
 }
 
+
+.todolist5{
+    background-color: white;
+    height: 100px;
+
+    background-image: url("../assets/todolist05.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    background-size: 20%;
+    margin-bottom: 30px;
+    
+}
+
+#arrow05{
+    height: 100px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.lorem3{
+    font-size: 3em;
+    line-height: 1.5em;
+}
 </style>
 
